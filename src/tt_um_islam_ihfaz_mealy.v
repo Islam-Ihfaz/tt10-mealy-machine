@@ -18,8 +18,8 @@ module tt_um_islam_ihfaz_mealy (
 
     wire x1 = ui_in[0];
     wire z1;
-    reg [1:3] y;
-    reg [1:3] next_state;
+    reg [3:1] y;
+    reg [3:1] next_state;
 
     parameter state_a=3'b000,
               state_b=3'b001,

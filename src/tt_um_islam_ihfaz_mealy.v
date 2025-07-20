@@ -35,7 +35,7 @@ module tt_um_islam_ihfaz_mealy (
             y<=next_state;
     end
 
-    assign z1=(y[1] & ~x1 & clk)|(y[2] & y[3] & x1 & clk);
+    assign z1=(y[3] & ~x1 & clk)|(y[2] & y[1] & x1 & clk);
     always @(y or x1) 
     begin
     case(y)
